@@ -1,0 +1,15 @@
+.scrolltext-container {
+    height: 100%;
+    width: 26vw;
+    position: absolute;
+    top: 15vw;
+    left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .st-title {
+        color: white;
+        font-size: 2vw;
+    }
+
+}

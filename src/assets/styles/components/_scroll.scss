@@ -1,0 +1,97 @@
+.scroll-container {
+    background-image: url(../../images/comic/red_scroll.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100% 43vw;
+    height: 100%;
+    width: 26vw;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 2vw 25vw;
+
+    input {
+        border-radius: 1vw;
+        border: 4px solid #daa659;
+        font-size: 2vw;
+        width: 80%;
+    }
+
+    .btn {
+        margin-top: 10vw;
+    }
+
+    .sc-title {
+        color: #b75e62;
+        font-size: 2vw;
+    }
+
+    .sc-title-2 {
+        color: #b75e62;
+        font-size: 1.3vw;
+        padding: 1vw 0vw;
+    }
+
+    .sc-question {
+        color: #000;
+        font-size: 1.6vw;
+    }
+
+    .sc-button {
+        .btn-submit {
+            height: 3vw;
+            width: 6vw;
+            margin-left: auto;
+            margin-top: 3vw;
+            position: absolute;
+            left: 18vw;
+        }
+
+        .btn-submit:hover {
+            height: 4vw;
+            width: 7vw;
+        }
+
+        .btn-startover {
+            height: 3vw;
+            width: 6vw;
+            margin-left: auto;
+            margin-top: 3vw;
+            position: absolute;
+        }
+
+        .btn-startover:hover {
+            height: 4vw;
+            width: 7vw;
+        }
+
+        .btn-next {
+            height: 3vw;
+            width: 6vw;
+            margin-left: auto;
+            margin-top: 3vw;
+            position: absolute;
+        }
+
+        .btn-next:hover {
+            height: 4vw;
+            width: 7vw;
+        }
+    }
+
+    .result1 {
+    position: absolute;
+    left: 3vw;
+    top: 43vw;
+    color: white;
+    font-size: 1.6vw;
+}
+
+    @media (orientation: portrait) {
+        display: none;
+    }
+}

@@ -1,0 +1,201 @@
+.comic-page {
+    background-image: url(../../images/comic/bgPaper.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    height: 48vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 13%;
+
+    .cp-title {
+        font-family: GoT;
+        font-size: 3vw;
+    }
+
+    .cp-panel-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 70%;
+        width: 90%;
+        position: relative;
+        gap: 10px;
+        font-size: 1.5vw;
+        color: white;
+
+        .pen-icon {
+            width: 10%;
+            height: 10%;
+
+        }
+
+        .lock-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .panel-number {
+            text-align: left;
+            margin-bottom: 10%;
+            padding-left: 10px;
+        }
+
+        .panel-1 {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+            border: 4px solid #1c1c1a;
+            text-align: center;
+            background-color: #a79d93;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .panel-number-1 {
+                align-self: start;
+                margin-left: 8%;
+            }
+
+            .pen-button {
+                border-radius: 50%;
+                height: 4vw;
+                width: 4vw;
+                background-color: white;
+
+                img {
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    margin-top: 20%;
+                }
+            }
+
+            .pen-button:hover {
+                height: 4.5vw;
+                width: 4.6vw;
+            }
+
+            .panel-text {
+                position: absolute;
+                top: 22%;
+            }
+        }
+
+        .panel-2 {
+            grid-column: 4 / span 1;
+            grid-row: 1 / span 2;
+            border: 4px solid #1c1c1a;
+            text-align: center;
+            background-color: #a79d93;
+        }
+
+        .panel-3 {
+            grid-column: 5 / span 2;
+            grid-row: 1 / span 2;
+            border: 4px solid #1c1c1a;
+            text-align: center;
+            background-color: #a79d93;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .panel-number-3 {
+                align-self: start;
+                margin-left: 8%;
+            }
+
+            .panel-number-3-hide {
+                display: none;
+            }
+
+            .pen-button {
+                border-radius: 50%;
+                height: 4vw;
+                width: 4vw;
+                background-color: white;
+
+                img {
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    margin-top: 20%;
+                }
+            }
+
+            .pen-button:hover {
+                height: 4.5vw;
+                width: 4.6vw;
+            }
+
+            .panel-text {
+                position: absolute;
+                top: 22%;
+                font-size: 1vw;
+            }
+        }
+
+        .panel-4 {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+            border: 4px solid #1c1c1a;
+            text-align: center;
+            background-color: #a79d93;
+        }
+
+        .panel-5 {
+            grid-column: 3 / span 2;
+            grid-row: 3 / span 2;
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+            border: 4px solid #1c1c1a;
+            text-align: center;
+            background-color: #a79d93;
+        }
+
+        .panel-6 {
+            grid-column: 4 / span 3;
+            grid-row: 3 / span 2;
+            border: 4px solid #1c1c1a;
+            clip-path: polygon(45% 0, 100% 0, 100% 100%, 15% 100%);
+            text-align: center;
+            background-color: #a79d93;
+
+            .panel-number-6 {
+                text-align: left;
+                margin-bottom: 8%;
+                padding-left: 10px;
+                margin-left: 50%;
+            }
+        }
+
+        .panel-7 {
+            grid-column: 1 / span 3;
+            grid-row: 5 / span 2;
+            border: 4px solid #1c1c1a;
+            clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
+            background-color: #a79d93;
+            text-align: center;
+        }
+
+        .panel-8 {
+            grid-column: 3 / span 4;
+            grid-row: 5 / span 2;
+            border: 4px solid #1c1c1a;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+            text-align: center;
+            background-color: #a79d93;
+
+            .panel-number-8 {
+                text-align: left;
+                margin-bottom: 8%;
+                padding-left: 10px;
+                margin-left: 5%;
+            }
+
+        }
+    }
+
+    @media (orientation: portrait) {
+        display: none;
+    }
+}

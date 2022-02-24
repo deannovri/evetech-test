@@ -1,0 +1,63 @@
+.scroll-container-purple {
+    background-image: url(../../images/comic/purple_scroll.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100% 43vw;
+    height: 100%;
+    width: 26vw;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 2vw 25vw;
+
+    .sc-title {
+        color: #8d56ba;
+        font-size: 2vw;
+    }
+
+    .sc-title-2 {
+        color: #000;
+        font-size: 1.3vw;
+        padding: 1vw 0vw;
+    }
+
+    .character-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+        font-size: 1.5vw;
+        color: #8d56ba;
+
+        img {
+            height: 10vw;
+            border-radius: 20px;
+            margin-right: 25%;
+            cursor: pointer;
+        }
+
+        .active {
+            border: 2px solid red
+        }
+    }
+
+    .btn-create {
+        height: 3vw;
+        width: 6vw;
+        top: 37vw;
+        left: 17vw;
+        position: absolute;
+    }
+
+    .btn-create:hover {
+        height: 4vw;
+        width: 7vw;
+    }
+
+    @media (orientation: portrait) {
+        display: none;
+    }
+}
