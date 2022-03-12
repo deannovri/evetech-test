@@ -1,31 +1,31 @@
-@import './pages/home';
-@import './pages/login';
-@import './pages/comic';
-@import './components/scroll';
-@import './components/comicpage';
-@import './components/scrollpurple';
-@import './components/scrolltext';
-@import './components/scroll2';
-@import './components/scrollpurple2';
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/comic";
+@import "./components/redscrollquestion1";
+@import "./components/comicpage";
+@import "./components/purplescrollboygirl";
+@import "./components/redscrollquestion2";
+@import "./components/purplescrollsmokebombhook";
+@import "./components/redscrollquestion3";
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Baloo';
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo";
+  text-decoration: none;
 }
 
 @font-face {
-  font-family: 'GoT';
-  src: local('GoT'), url(../font/GangofThreeRegular.ttf) format('truetype');
+  font-family: "GoT";
+  src: local("GoT"), url(../font/GangofThreeRegular.ttf) format("truetype");
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
 
 @font-face {
-  font-family: 'Baloo';
-  src: local('Baloo'), url(../font/Baloo.ttf) format('truetype');
+  font-family: "Baloo";
+  src: local("Baloo"), url(../font/Baloo.ttf) format("truetype");
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }

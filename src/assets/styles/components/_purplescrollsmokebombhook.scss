@@ -10,8 +10,6 @@
     position: absolute;
     top: 0;
     left: 60%;
-    display: flex;
-    flex-wrap: wrap;
     padding: 1vw 2vw 25vw;
 
     .sc-title {
@@ -25,7 +23,7 @@
         padding: 1vw 0vw;
     }
 
-    .character-container {
+    .smokebombhook-container {
         display: flex;
         align-items: center;
         margin-bottom: 5%;
@@ -35,12 +33,15 @@
         img {
             height: 10vw;
             border-radius: 20px;
-            margin-right: 25%;
             cursor: pointer;
         }
 
-        .active {
-            border: 2px solid red
+        .bombhook-text {
+            padding-left: 10%;
+        }
+
+        .selected {
+            border: 2px solid red;
         }
     }
 

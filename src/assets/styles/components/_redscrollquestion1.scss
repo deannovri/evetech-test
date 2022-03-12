@@ -84,12 +84,12 @@
     }
 
     .result1 {
-    position: absolute;
-    left: 3vw;
-    top: 43vw;
-    color: white;
-    font-size: 1.6vw;
-}
+        position: absolute;
+        left: 3vw;
+        top: 43vw;
+        color: white;
+        font-size: 1.6vw;
+    }
 
     @media (orientation: portrait) {
         display: none;

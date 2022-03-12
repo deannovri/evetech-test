@@ -27,10 +27,14 @@
         font-size: 1.5vw;
         color: white;
 
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
         .pen-icon {
             width: 10%;
             height: 10%;
-
         }
 
         .lock-icon {
@@ -106,11 +110,7 @@
                 margin-left: 8%;
             }
 
-            .panel-number-3-hide {
-                display: none;
-            }
-
-            .pen-button {
+            .pen-button-3 {
                 border-radius: 50%;
                 height: 4vw;
                 width: 4vw;
@@ -123,15 +123,15 @@
                 }
             }
 
-            .pen-button:hover {
+            .pen-button-3:hover {
                 height: 4.5vw;
                 width: 4.6vw;
             }
 
-            .panel-text {
+            .panel-text-3 {
                 position: absolute;
-                top: 22%;
-                font-size: 1vw;
+                top: 21%;
+                font-size: 1.2vw;
             }
         }
 
@@ -147,51 +147,117 @@
             grid-column: 3 / span 2;
             grid-row: 3 / span 2;
             clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
-            border: 4px solid #1c1c1a;
             text-align: center;
-            background-color: #a79d93;
+            background-color: #1c1c1a;
+            position: relative;
+
+            .panel-5-inner {
+                background-color: #a79d93;
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: calc(100% - 10.8px);
+                height: calc(100% - 8px);
+                clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+
+                .panel-number-5 {
+                    text-align: left;
+                    margin-left: 8%;
+                }
+
+                .pen-button-5 {
+                    border-radius: 50%;
+                    height: 4vw;
+                    width: 4vw;
+                    background-color: white;
+                    margin-left: 25px;
+
+                    img {
+                        width: 2.5vw;
+                        height: 2.5vw;
+                        margin-top: 20%;
+                    }
+                }
+
+                .pen-button-:hover {
+                    height: 4.5vw;
+                    width: 4.6vw;
+                }
+
+                .panel-text-5 {
+                    position: absolute;
+                    font-size: 1vw;
+                    padding-right: 55px;
+                }
+            }
         }
 
         .panel-6 {
             grid-column: 4 / span 3;
             grid-row: 3 / span 2;
-            border: 4px solid #1c1c1a;
+            background-color: #1c1c1a;
             clip-path: polygon(45% 0, 100% 0, 100% 100%, 15% 100%);
             text-align: center;
-            background-color: #a79d93;
+            position: relative;
 
-            .panel-number-6 {
-                text-align: left;
-                margin-bottom: 8%;
-                padding-left: 10px;
-                margin-left: 50%;
+            .panel-6-inner {
+                background-color: #a79d93;
+                position: absolute;
+                top: 4px;
+                left: 8px;
+                width: calc(100% - 12px);
+                height: calc(100% - 8px);
+                clip-path: polygon(45% 0, 100% 0, 100% 100%, 15% 100%);
+
+                .panel-number-6 {
+                    margin-bottom: 7%;
+                    padding-left: 10px;
+                }
             }
         }
 
         .panel-7 {
             grid-column: 1 / span 3;
             grid-row: 5 / span 2;
-            border: 4px solid #1c1c1a;
             clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
-            background-color: #a79d93;
+            background-color: #1c1c1a;
             text-align: center;
+            position: relative;
+
+            .panel-7-inner {
+                background-color: #a79d93;
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: calc(100% - 12px);
+                height: calc(100% - 8px);
+                clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
+            }
         }
 
         .panel-8 {
             grid-column: 3 / span 4;
             grid-row: 5 / span 2;
-            border: 4px solid #1c1c1a;
+            position: relative;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
             text-align: center;
-            background-color: #a79d93;
+            background-color: #1c1c1a;
 
-            .panel-number-8 {
-                text-align: left;
-                margin-bottom: 8%;
-                padding-left: 10px;
-                margin-left: 5%;
+            .panel-8-inner {
+                background-color: #a79d93;
+                position: absolute;
+                top: 4px;
+                left: 8px;
+                width: calc(100% - 12px);
+                height: calc(100% - 8px);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 33% 100%);
+
+                .panel-number-8 {
+                    margin-bottom: 7%;
+                    padding-left: 30px;
+                    text-align: start;
+                }
             }
-
         }
     }
 
