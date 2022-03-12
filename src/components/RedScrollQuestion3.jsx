@@ -1,15 +1,15 @@
 import React from "react";
 import Submit from "../assets/images/comic/btnSubmit.png";
-import StartOver from "../assets/images/comic/btnStartOver.png";
-import Next from "../assets/images/comic/btnNext.png";
+// import StartOver from "../assets/images/comic/btnStartOver.png";
+// import Next from "../assets/images/comic/btnNext.png";
 import { useRedScrollQuestion3InitialState } from "../contexts/ComicPageContext.jsx";
 
 function RedScrollQuestion2() {
     const Question3 = useRedScrollQuestion3InitialState();
 
-    function StartOverReload() {
-        window.location.reload(false);
-    }
+    // function StartOverReload() {
+    //     window.location.reload(false);
+    // }
 
     return (
         <>

@@ -305,182 +305,192 @@ export default function ComicPageContext({ children }) {
     }
 
     return (
-        <HandleOpenRedScrollQuestion3.Provider value={OpenRedScrollQuestion3}>
-            <RedScrollQuestion3InitialState.Provider value={createQuestion3}>
-                <Panel5CreateState.Provider value={panel5CreateState}>
-                    <Panel4Girl.Provider value={panel4Girl}>
-                        <Panel4Boy.Provider value={panel4Boy}>
-                            <Panel3CreateState.Provider
-                                value={panel3CreateState}
-                            >
-                                <Panel3NumberLockState.Provider
-                                    value={panel3NumberLockState}
+        <Panel5NumberLockState.Provider value={panel5NumberLockState}>
+            <HandleOpenRedScrollQuestion3.Provider
+                value={OpenRedScrollQuestion3}
+            >
+                <RedScrollQuestion3InitialState.Provider
+                    value={createQuestion3}
+                >
+                    <Panel5CreateState.Provider value={panel5CreateState}>
+                        <Panel4Girl.Provider value={panel4Girl}>
+                            <Panel4Boy.Provider value={panel4Boy}>
+                                <Panel3CreateState.Provider
+                                    value={panel3CreateState}
                                 >
-                                    <Panel3Hook.Provider value={panel3Hook}>
-                                        <Panel3SmokeBomb.Provider
-                                            value={panel3SmokeBomb}
-                                        >
-                                            <CreateSmokeBombHook.Provider
-                                                value={HandleCreateSmokeBomb}
+                                    <Panel3NumberLockState.Provider
+                                        value={panel3NumberLockState}
+                                    >
+                                        <Panel3Hook.Provider value={panel3Hook}>
+                                            <Panel3SmokeBomb.Provider
+                                                value={panel3SmokeBomb}
                                             >
-                                                <SelectHookState.Provider
-                                                    value={selectHook}
+                                                <CreateSmokeBombHook.Provider
+                                                    value={
+                                                        HandleCreateSmokeBomb
+                                                    }
                                                 >
-                                                    <SelectSmokeBombState.Provider
-                                                        value={selectSmokeBomb}
+                                                    <SelectHookState.Provider
+                                                        value={selectHook}
                                                     >
-                                                        <SelectHook.Provider
+                                                        <SelectSmokeBombState.Provider
                                                             value={
-                                                                HandleSelectHook
+                                                                selectSmokeBomb
                                                             }
                                                         >
-                                                            <SelectSmokeBomb.Provider
+                                                            <SelectHook.Provider
                                                                 value={
-                                                                    HandleSelectSmokeBomb
+                                                                    HandleSelectHook
                                                                 }
                                                             >
-                                                                <PurpleScrollSmokeBombHookInitialState.Provider
+                                                                <SelectSmokeBomb.Provider
                                                                     value={
-                                                                        openPurpleScrollSmokeBombHook
+                                                                        HandleSelectSmokeBomb
                                                                     }
                                                                 >
-                                                                    <HandleOpenPurpleScrollSmokeBombHook.Provider
+                                                                    <PurpleScrollSmokeBombHookInitialState.Provider
                                                                         value={
-                                                                            OpenPurpleScrollSmokeBombHook
+                                                                            openPurpleScrollSmokeBombHook
                                                                         }
                                                                     >
-                                                                        <Question2ResultState.Provider
+                                                                        <HandleOpenPurpleScrollSmokeBombHook.Provider
                                                                             value={
-                                                                                submitAnswer2
+                                                                                OpenPurpleScrollSmokeBombHook
                                                                             }
                                                                         >
-                                                                            <HandleSubmitRedScrollQuestion2.Provider
+                                                                            <Question2ResultState.Provider
                                                                                 value={
-                                                                                    HandleSubmitQuestion2
+                                                                                    submitAnswer2
                                                                                 }
                                                                             >
-                                                                                <HandleChangeRedScrollQuestion2.Provider
+                                                                                <HandleSubmitRedScrollQuestion2.Provider
                                                                                     value={
-                                                                                        HandleChangeQuestion2
+                                                                                        HandleSubmitQuestion2
                                                                                     }
                                                                                 >
-                                                                                    <HandleOpenRedScrollQuestion2.Provider
+                                                                                    <HandleChangeRedScrollQuestion2.Provider
                                                                                         value={
-                                                                                            OpenRedScrollQuestion2
+                                                                                            HandleChangeQuestion2
                                                                                         }
                                                                                     >
-                                                                                        <RedScrollQuestion2InitialState.Provider
+                                                                                        <HandleOpenRedScrollQuestion2.Provider
                                                                                             value={
-                                                                                                createQuestion2
+                                                                                                OpenRedScrollQuestion2
                                                                                             }
                                                                                         >
-                                                                                            <Panel1Girl.Provider
+                                                                                            <RedScrollQuestion2InitialState.Provider
                                                                                                 value={
-                                                                                                    panel1Girl
+                                                                                                    createQuestion2
                                                                                                 }
                                                                                             >
-                                                                                                <Panel1Boy.Provider
+                                                                                                <Panel1Girl.Provider
                                                                                                     value={
-                                                                                                        panel1Boy
+                                                                                                        panel1Girl
                                                                                                     }
                                                                                                 >
-                                                                                                    <CreateBoyGirl.Provider
+                                                                                                    <Panel1Boy.Provider
                                                                                                         value={
-                                                                                                            HandleCreateBoyGirl
+                                                                                                            panel1Boy
                                                                                                         }
                                                                                                     >
-                                                                                                        <SelectGirlState.Provider
+                                                                                                        <CreateBoyGirl.Provider
                                                                                                             value={
-                                                                                                                selectGirl
+                                                                                                                HandleCreateBoyGirl
                                                                                                             }
                                                                                                         >
-                                                                                                            <SelectBoyState.Provider
+                                                                                                            <SelectGirlState.Provider
                                                                                                                 value={
-                                                                                                                    selectBoy
+                                                                                                                    selectGirl
                                                                                                                 }
                                                                                                             >
-                                                                                                                <SelectGirl.Provider
+                                                                                                                <SelectBoyState.Provider
                                                                                                                     value={
-                                                                                                                        HandleSelectGirl
+                                                                                                                        selectBoy
                                                                                                                     }
                                                                                                                 >
-                                                                                                                    <SelectBoy.Provider
+                                                                                                                    <SelectGirl.Provider
                                                                                                                         value={
-                                                                                                                            HandleSelectBoy
+                                                                                                                            HandleSelectGirl
                                                                                                                         }
                                                                                                                     >
-                                                                                                                        <PurpleScrollBoyGirlInitialState.Provider
+                                                                                                                        <SelectBoy.Provider
                                                                                                                             value={
-                                                                                                                                openPurpleScrollBoyGirl
+                                                                                                                                HandleSelectBoy
                                                                                                                             }
                                                                                                                         >
-                                                                                                                            <HandleOpenPurpleScrollBoyGirl.Provider
+                                                                                                                            <PurpleScrollBoyGirlInitialState.Provider
                                                                                                                                 value={
-                                                                                                                                    OpenPurpleScrollBoyGirl
+                                                                                                                                    openPurpleScrollBoyGirl
                                                                                                                                 }
                                                                                                                             >
-                                                                                                                                <Question1ResultState.Provider
+                                                                                                                                <HandleOpenPurpleScrollBoyGirl.Provider
                                                                                                                                     value={
-                                                                                                                                        submitAnswer1
+                                                                                                                                        OpenPurpleScrollBoyGirl
                                                                                                                                     }
                                                                                                                                 >
-                                                                                                                                    <HandleSubmitRedScrollQuestion1.Provider
+                                                                                                                                    <Question1ResultState.Provider
                                                                                                                                         value={
-                                                                                                                                            HandleSubmitQuestion1
+                                                                                                                                            submitAnswer1
                                                                                                                                         }
                                                                                                                                     >
-                                                                                                                                        <HandleChangeRedScrollQuestion1.Provider
+                                                                                                                                        <HandleSubmitRedScrollQuestion1.Provider
                                                                                                                                             value={
-                                                                                                                                                HandleChangeQuestion1
+                                                                                                                                                HandleSubmitQuestion1
                                                                                                                                             }
                                                                                                                                         >
-                                                                                                                                            <RedScrollQuestion1InitialState.Provider
+                                                                                                                                            <HandleChangeRedScrollQuestion1.Provider
                                                                                                                                                 value={
-                                                                                                                                                    create
+                                                                                                                                                    HandleChangeQuestion1
                                                                                                                                                 }
                                                                                                                                             >
-                                                                                                                                                <HandleOpenRedScrollQuestion1.Provider
+                                                                                                                                                <RedScrollQuestion1InitialState.Provider
                                                                                                                                                     value={
-                                                                                                                                                        OpenRedScrollQuestion1
+                                                                                                                                                        create
                                                                                                                                                     }
                                                                                                                                                 >
-                                                                                                                                                    {
-                                                                                                                                                        children
-                                                                                                                                                    }
-                                                                                                                                                </HandleOpenRedScrollQuestion1.Provider>
-                                                                                                                                            </RedScrollQuestion1InitialState.Provider>
-                                                                                                                                        </HandleChangeRedScrollQuestion1.Provider>
-                                                                                                                                    </HandleSubmitRedScrollQuestion1.Provider>
-                                                                                                                                </Question1ResultState.Provider>
-                                                                                                                            </HandleOpenPurpleScrollBoyGirl.Provider>
-                                                                                                                        </PurpleScrollBoyGirlInitialState.Provider>
-                                                                                                                    </SelectBoy.Provider>
-                                                                                                                </SelectGirl.Provider>
-                                                                                                            </SelectBoyState.Provider>
-                                                                                                        </SelectGirlState.Provider>
-                                                                                                    </CreateBoyGirl.Provider>
-                                                                                                </Panel1Boy.Provider>
-                                                                                            </Panel1Girl.Provider>
-                                                                                        </RedScrollQuestion2InitialState.Provider>
-                                                                                    </HandleOpenRedScrollQuestion2.Provider>
-                                                                                </HandleChangeRedScrollQuestion2.Provider>
-                                                                            </HandleSubmitRedScrollQuestion2.Provider>
-                                                                        </Question2ResultState.Provider>
-                                                                    </HandleOpenPurpleScrollSmokeBombHook.Provider>
-                                                                </PurpleScrollSmokeBombHookInitialState.Provider>
-                                                            </SelectSmokeBomb.Provider>
-                                                        </SelectHook.Provider>
-                                                    </SelectSmokeBombState.Provider>
-                                                </SelectHookState.Provider>
-                                            </CreateSmokeBombHook.Provider>
-                                        </Panel3SmokeBomb.Provider>
-                                    </Panel3Hook.Provider>
-                                </Panel3NumberLockState.Provider>
-                            </Panel3CreateState.Provider>
-                        </Panel4Boy.Provider>
-                    </Panel4Girl.Provider>
-                </Panel5CreateState.Provider>
-            </RedScrollQuestion3InitialState.Provider>
-        </HandleOpenRedScrollQuestion3.Provider>
+                                                                                                                                                    <HandleOpenRedScrollQuestion1.Provider
+                                                                                                                                                        value={
+                                                                                                                                                            OpenRedScrollQuestion1
+                                                                                                                                                        }
+                                                                                                                                                    >
+                                                                                                                                                        {
+                                                                                                                                                            children
+                                                                                                                                                        }
+                                                                                                                                                    </HandleOpenRedScrollQuestion1.Provider>
+                                                                                                                                                </RedScrollQuestion1InitialState.Provider>
+                                                                                                                                            </HandleChangeRedScrollQuestion1.Provider>
+                                                                                                                                        </HandleSubmitRedScrollQuestion1.Provider>
+                                                                                                                                    </Question1ResultState.Provider>
+                                                                                                                                </HandleOpenPurpleScrollBoyGirl.Provider>
+                                                                                                                            </PurpleScrollBoyGirlInitialState.Provider>
+                                                                                                                        </SelectBoy.Provider>
+                                                                                                                    </SelectGirl.Provider>
+                                                                                                                </SelectBoyState.Provider>
+                                                                                                            </SelectGirlState.Provider>
+                                                                                                        </CreateBoyGirl.Provider>
+                                                                                                    </Panel1Boy.Provider>
+                                                                                                </Panel1Girl.Provider>
+                                                                                            </RedScrollQuestion2InitialState.Provider>
+                                                                                        </HandleOpenRedScrollQuestion2.Provider>
+                                                                                    </HandleChangeRedScrollQuestion2.Provider>
+                                                                                </HandleSubmitRedScrollQuestion2.Provider>
+                                                                            </Question2ResultState.Provider>
+                                                                        </HandleOpenPurpleScrollSmokeBombHook.Provider>
+                                                                    </PurpleScrollSmokeBombHookInitialState.Provider>
+                                                                </SelectSmokeBomb.Provider>
+                                                            </SelectHook.Provider>
+                                                        </SelectSmokeBombState.Provider>
+                                                    </SelectHookState.Provider>
+                                                </CreateSmokeBombHook.Provider>
+                                            </Panel3SmokeBomb.Provider>
+                                        </Panel3Hook.Provider>
+                                    </Panel3NumberLockState.Provider>
+                                </Panel3CreateState.Provider>
+                            </Panel4Boy.Provider>
+                        </Panel4Girl.Provider>
+                    </Panel5CreateState.Provider>
+                </RedScrollQuestion3InitialState.Provider>
+            </HandleOpenRedScrollQuestion3.Provider>
+        </Panel5NumberLockState.Provider>
     );
 }
